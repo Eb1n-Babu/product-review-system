@@ -21,7 +21,7 @@ from rest_framework.routers import DefaultRouter
 from rest_framework.authtoken.views import obtain_auth_token
 from products.views import ProductViewSet
 from reviews.views import ReviewViewSet
-from users.views import UserProfileViewSet
+from users.views import UserProfileViewSet, RegisterView
 
 router = DefaultRouter()
 router.register(r'products', ProductViewSet)
@@ -33,5 +33,5 @@ urlpatterns = [
     path('api/', include(router.urls)),
     path('api-auth/', include('rest_framework.urls')),
     path('api/token/', obtain_auth_token, name='api_token'),
+    path('api/register/', RegisterView.as_view(), name='register'),
 ]
-

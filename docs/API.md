@@ -51,3 +51,19 @@
 - Regular users are created via Django admin or registration (not implemented in this version)  
 - Duplicate reviews are prevented by unique_together constraint  
 - Average ratings are calculated automatically in product responses
+
+# docs/API.md
+# Product Review System API Documentation
+
+## Authentication
+- **POST /api/token/** - Obtain authentication token
+  - Request: `{ "username": "string", "password": "string" }`
+  - Response: `{ "token": "string" }`
+  - Status Codes: 200 (success), 400 (invalid credentials)
+- **POST /api/register/** - Register a new user
+  - Request: `{ "username": "string", "email": "string", "password": "string" }`
+  - Response: `{ "username": "string", "email": "string" }`
+  - Status Codes: 201 (created), 400 (invalid data)
+
+## Product Endpoints
+...
