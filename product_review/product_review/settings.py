@@ -10,26 +10,24 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
-#from pathlib import Path
-from pathlib import Path
 import os
-from dotenv import load_dotenv
-
-load_dotenv()
-
-
-BASE_DIR = Path(__file__).resolve().parent.parent
-
-SECRET_KEY = os.getenv('django-insecure-%0*hg#uy24u$q#(7n3qfc%s14x877kua+q(=_4bj!uxjw-l276')
+from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-#BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = Path(__file__).resolve().parent.parent
 
+# Set SECRET_KEY (hardcoded for local development only)
+SECRET_KEY = 'pt1t$$x18e19bz*2ke28i4y5qfj0!_!fv!tn1lj+wbl^s)4j_q'
+
+# SECURITY WARNING: don't run with debug turned on in production!
+DEBUG = True
+
+# Add other settings as needed (e.g., INSTALLED_APPS, DATABASES, etc.)
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
+#SECURITY WARNING: keep the secret key used in production secret!
 #SECRET_KEY = 'django-insecure-%0*hg#uy24u$q#(7n3qfc%s14x877kua+q(=_4bj!uxjw-l276'
 
 # SECURITY WARNING: don't run with debug turned on in production!
