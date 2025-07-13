@@ -66,4 +66,10 @@
   - Status Codes: 201 (created), 400 (invalid data)
 
 ## Product Endpoints
+- **GET /api/products/** - List all products
+  - Query Parameters:
+    - `search`: Search by name or description (e.g., `?search=laptop`)
+    - `price`: Filter by exact price (e.g., `?price=19.99`)
+  - Response: List of products with id, name, description, price, average_rating, review_count
+  - Status Codes: 200 (success)
 ...
