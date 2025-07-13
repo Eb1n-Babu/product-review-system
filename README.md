@@ -9,6 +9,14 @@ What’s This Project About?
 This API lets you manage products, post reviews, and handle user roles like a pro. Here’s the rundown:
 
 
+# Prerequisites
+Before starting, ensure you have the following installed:
+- **Python 3.8+**: Download from [python.org](https://www.python.org/downloads/).
+- **Git**: Install from [git-scm.com](https://git-scm.com/downloads).
+- **Code Editor**: Use Visual Studio Code, PyCharm, or any text editor of your choice.
+- **Postman** (optional): For testing API endpoints, download from [postman.com](https://www.postman.com/downloads).
+- A GitHub account for pushing the project to a repository.
+
 
 Admins 👑 can create, update, or delete products.
 
