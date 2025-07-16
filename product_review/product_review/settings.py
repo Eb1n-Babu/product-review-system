@@ -29,8 +29,6 @@ DEBUG = True
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 #SECURITY WARNING: keep the secret key used in production secret!
-#SECRET_KEY = 'django-insecure-%0*hg#uy24u$q#(7n3qfc%s14x877kua+q(=_4bj!uxjw-l276'
-
 # SECURITY WARNING: don't run with debug turned on in production!
 
 
