@@ -12,12 +12,13 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 import os
 from pathlib import Path
+from decouple import config
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Set SECRET_KEY (hardcoded for local development only)
-SECRET_KEY = 'pt1t$$x18e19bz*2ke28i4y5qfj0!_!fv!tn1lj+wbl^s)4j_q'
+SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
